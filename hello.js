@@ -253,3 +253,15 @@ const findIndexNames = (char, array) => {
 console.log(findIndexNames("a", names));
 */
 /*----------------------------------------------*/
+
+/*This is for Array .findIndex() Method  - the first index that passes the callback function’s test. Returns -1 if no element passes the test.ement in the array that satisfies the given functi*/
+
+/*----------------------------------------------*/
+
+const names = ["cora", "may", "joana", "alicia"];
+
+const findIndexNames = (char, array) => {
+  return array.findIndex((name) => name[0].toLowerCase() === char);
+};
+console.log(findIndexNames("a", names));
+/*---------------------------------------------*/
